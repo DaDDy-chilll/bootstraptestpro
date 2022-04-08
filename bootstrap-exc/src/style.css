@@ -1,0 +1,59 @@
+.nav-control{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.hometext-container > * {
+    margin: 5% 0 5%;
+}
+.home-text{
+    /* width: 65%; */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.service-icon{
+    width: 50px;
+    height: 50px;
+}
+.rounded-5{
+    border-radius: 10px;
+}
+.testimonial-icon{
+    margin-top: -40px;
+}
+.google-map{
+    height:500px;
+    width:430px;
+}
+.slick-next{
+    right: 13px;
+}
+.slick-prev{
+    left: 13px;
+    z-index: 5;
+}
+.google-map{
+    width: 100%;
+}
+.footer-icon{
+    background-color: rgb(46, 46, 168);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+/* @media (max-width:420px){
+    .google-map{
+        height:500px;
+        width: 340px;
+    }
+}
+@media (max-width:820px){
+    .google-map{
+        height:500px;
+        width: 740px;
+    }
+} */

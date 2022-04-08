@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.login{
+    background-color: #05F2C7;
+    
+}
+.singup:hover{
+    color: #05F2C7;
+}
+.home-header{
+    font-family: 'Redressed', cursive;
+    
+}
+
+
+.card-body > h3{
+    font-family: 'Palette Mosaic', cursive;
+    border: none;
+    
+}
+.product{
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+}
+.product > .product-name{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 18px;
+}
+.content{
+    border: none;
+    
+}
+.content-btn{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(177, 170, 170, 0.411);
+}
+.content-btn:hover{
+    background-color: #1616169f;
+}
+.content-btn:active{
+    background-color: #03A688;
+    color: white;
+}
+.footer{
+    background-color: #025949;
+}
+.footer-text{
+    color: #201f1f;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+}
+@media (max-width:990px) {
+    .nav-container {
+        background-color: #0D0D0D;
+    }
+    .content-btn{
+        padding: 8px 18px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .product > .product-name{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .footer-text{
+       
+        font-size: 16px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 500;
+    }
+}
