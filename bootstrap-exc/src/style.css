@@ -1,3 +1,17 @@
+html[data-theme='dark']{
+    --body-bg-dark:var(--pdf-zinc-900);
+    --text-dark:var(--pdf-slate-200);
+}
+body{
+    background-color: var(--body-bg-dark);
+    color: var(--text-dark);
+}
+.card{
+    background-color: var(--body-bg-dark);
+}
+.navbar{
+    background-color: var(--body-bg-dark);
+}
 .nav-control{
     position: fixed;
     top: 0;
