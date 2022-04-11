@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+
+    <!-- Primary Meta Tags -->
+<title>Bootstrap-Pro</title>
+<meta name="title" content="Bootstrap-Pro">
+<meta name="description" content="This is my first bootstrap website.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Bootstrap-Pro">
+<meta property="og:description" content="This is my first bootstrap website.">
+<meta property="og:image" content="data/bootstrap-pro.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Bootstrap-Pro">
+<meta property="twitter:description" content="This is my first bootstrap website.">
+<meta property="twitter:image" content="data/bootstrap-pro.png">
+
+
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./src/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./src/slick-1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./src/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../node_modules/colormyar/css/pdf.css"/>
+    <link rel="stylesheet" href="./src/style.css"/>
 </head>
 <body>
+  <div class="loading">
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
     <nav class="navbar navbar-expand-lg navbar-light  animate__animated">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler me-3 p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 rounded-5 border-0 mb-lg-0">
@@ -44,7 +74,7 @@
       <!-- home -->
     <div id="main-home-page" class="container my-4">
      <div class="row justify-content-between align-items-center">
-        <div class="col-xl-5">
+        <div class="col-xl-5 headline">
             <div class="hometext-container">
                 <span class="text-danger">Get Started</span>
                 <h1 class="home-text">
@@ -59,15 +89,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-6">
-            <img src="./data/1911.i126.029.P.m005.c33.video bloggers set-01.jpg" class="w-100 img-fluid" alt="home">
+        <div class="col-xl-6 headline">
+            <img src="./data/1911.i126.029.P.m005.c33.video bloggers set-01.jpg" class="w-100 img-fluid rounded-2" alt="home">
         </div>
     </div>
      </div>
      <!-- Services -->
      <div id="services" class="container my-5">
        <div class="row  justify-content-between align-items-center">
-         <div class="col-xl-5">
+         <div class="col-xl-5 headline">
            <div>
              <span>Get Services</span>
              <h1>
@@ -79,7 +109,7 @@
          </div>
          <div class="col-xl-6 mt-4 mt-lg-0">
            <div class="row g-4">
-             <div class="col-md-6">
+             <div class="col-md-6 headline">
                 <div class="card shadow-xl shadow-zinc-300 border-0 rounded-5">
                   <div class="card-body p-4">
                     <div class="service-icon bg-danger d-flex justify-content-center align-items-center rounded-circle pdf-bg-red-600 shadow-lg shadow-red-600">
@@ -90,7 +120,7 @@
                   </div>
                 </div>
              </div>
-             <div class="col-md-6">
+             <div class="col-md-6 headline">
               <div class="card shadow-xl shadow-zinc-300 border-0 rounded-5">
                 <div class="card-body p-4">
                   <div class="service-icon bg-success d-flex justify-content-center align-items-center rounded-circle pdf-bg-green-600 shadow-lg shadow-green-600">
@@ -101,7 +131,7 @@
                 </div>
               </div>
            </div>
-           <div class="col-md-6">
+           <div class="col-md-6 headline">
             <div class="card shadow-xl shadow-zinc-300 border-0 rounded-5">
               <div class="card-body p-4">
                 <div class="service-icon bg-info d-flex justify-content-center align-items-center rounded-circle pdf-bg-teal-400 shadow-lg shadow-teal-600">
@@ -112,7 +142,7 @@
               </div>
             </div>
          </div>
-         <div class="col-md-6">
+         <div class="col-md-6 headline">
           <div class="card shadow-xl shadow-zinc-300 border-0 rounded-5">
             <div class="card-body p-4">
               <div class="service-icon bg-warning d-flex justify-content-center align-items-center rounded-circle pdf-bg-yellow-500 shadow-lg shadow-yellow-600">
@@ -130,12 +160,12 @@
      <!-- about -->
      <div id="about" class="container my-5">
        <div class="row justify-content-between align-items-center">
-         <div class="col-xl-6">
+         <div class="col-xl-6 headline">
            <div>
              <img src="./data/flower.jpg" class="w-100 rounded-5" alt="flower">
            </div>
          </div>
-        <div class="col-xl-5 mt-4">
+        <div class="col-xl-5 mt-4 headline">
           <div class="hometext-container">
               <span class="text-danger">Get Started</span>
               <h1 class="home-text w">
@@ -155,20 +185,20 @@
      <!-- protfolio -->
      <div class="container my-5">
        <div class="row justify-content-between small my-4">
-        <div class="col-xl-6">
+        <div class="col-xl-6 headline">
           <div>
             <span class="text-danger">Profolio</span>
             <h4>Lorem ipsum dolor sit amet.</h4>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 headline">
           <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
        </div>
        <div class="row">
-         <div class="col-xl-12">
+         <div class="col-xl-12 headline">
            <div>
             <div class="profolio col-xl-12">
               <div class="card mx-2 border-0" style="width: 18rem;">
@@ -235,7 +265,7 @@
      <!-- team member -->
      <div class="container">
        <div class="row">
-         <div class="col-xl-12">
+         <div class="col-xl-12 headline">
             <div class="text-center my-5">
               <h6 class="text-danger">Our Team</h6>
             <h4>Meet Our Team of Experts</h4>
@@ -243,7 +273,7 @@
          </div>
        </div>
        <div class="row g-4">
-         <div class="col-xl-6">
+         <div class="col-xl-6 headline">
             <div class="row g-0">
               <div class="col-md-5">
                 <img src="./data/teammember.jpg" class="img-fluid rounded-start rounded-5" alt="...">
@@ -263,7 +293,7 @@
               </div>
             </div>
          </div>
-         <div class="col-xl-6">
+         <div class="col-xl-6 headline">
           <div class="row g-0">
             <div class="col-md-5">
               <img src="./data/teammember.jpg" class="img-fluid rounded-start rounded-5" alt="...">
@@ -283,7 +313,7 @@
             </div>
           </div>
        </div>
-       <div class="col-xl-6">
+       <div class="col-xl-6 headline">
         <div class="row g-0">
           <div class="col-md-5">
             <img src="./data/teammember.jpg" class="img-fluid rounded-start rounded-5" alt="...">
@@ -303,7 +333,7 @@
           </div>
         </div>
      </div>
-     <div class="col-xl-6">
+     <div class="col-xl-6 headline">
       <div class="row g-0">
         <div class="col-md-5">
           <img src="./data/teammember.jpg" class="img-fluid rounded-start rounded-5" alt="...">
@@ -327,7 +357,7 @@
      </div>
      <!-- testimonial -->
      <div class="container my-5">
-       <div class="row mb-4">
+       <div class="row mb-4 headline">
         <div class="col-xl-12">
           <div class="text-center my-5">
             <h6 class="text-danger">Testimonia</h6>
@@ -336,7 +366,7 @@
        </div>
        </div>
        <div class="row gy-5 g-xl-3">
-         <div class="col-xl-4">
+         <div class="col-xl-4 headline">
            <div class="card border-0 rounded-5 shadow-lg shadow-zinc-400">
              <div class="card-body">
                <div class="service-icon testimonial-icon bg-danger mb-3 d-flex justify-content-center align-items-center rounded-circle pdf-bg-red-600 shadow-lg shadow-red-300">
@@ -353,7 +383,7 @@
              </div>
            </div>
          </div>
-         <div class="col-xl-4">
+         <div class="col-xl-4 headline">
           <div class="card border-0 rounded-5 shadow-lg shadow-zinc-400">
             <div class="card-body">
               <div class="service-icon testimonial-icon bg-danger mb-3 d-flex justify-content-center align-items-center rounded-circle pdf-bg-red-600 shadow-lg shadow-red-300">
@@ -370,7 +400,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 headline">
           <div class="card border-0 rounded-5 shadow-lg shadow-zinc-400">
             <div class="card-body">
               <div class="service-icon testimonial-icon bg-danger mb-3 d-flex justify-content-center align-items-center rounded-circle pdf-bg-red-600 shadow-lg shadow-red-300">
@@ -392,16 +422,16 @@
      <!-- pricing -->
      <div id="pricing" class="container mb-5">
       <div class="row mb-4 justify-content-center">
-        <div class="col-xl-4">
+        <div class="col-xl-4 headline">
           <div class="text-center my-5">
             <h6 class="text-danger">Pricing</h6>
           <h4>Choose The Right Plan For Your Business</h4>
           </div>
        </div>
        </div>
-       <div class="row g-lg-0 g-3">
-         <div class="col-xl-4">
-           <div class="card border-0 shadow rounded-5">
+       <div class="row g-lg-3 g-3">
+         <div class="col-xl-4 headline">
+           <div class="card border-0 shadow-xl shadow-zinc-300  rounded-5">
              <div class="card-body p-4">
               <div class="d-flex justify-content-between align-items-center">
                 <div>
@@ -442,8 +472,8 @@
              </div>
            </div>
          </div>
-         <div class="col-xl-4">
-          <div class="card border-0 shadow rounded-5">
+         <div class="col-xl-4 headline">
+          <div class="card border-0 shadow-xl shadow-zinc-300 rounded-5">
             <div class="card-body p-4">
              <div class="d-flex justify-content-between align-items-center">
                <div>
@@ -484,8 +514,8 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4">
-          <div class="card border-0 shadow rounded-5">
+        <div class="col-xl-4 headline">
+          <div class="card border-0 shadow-xl shadow-zinc-300 rounded-5">
             <div class="card-body p-4">
              <div class="d-flex justify-content-between align-items-center">
                <div>
@@ -531,7 +561,7 @@
      <!-- Content Form -->
      <div id="content" class="container">
        <div class="row justify-content-between">
-         <div class="col-xl-4">
+         <div class="col-xl-4 headline">
            <div>
              <h2>Get In Touch</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, adipisci!</p>
@@ -582,12 +612,12 @@
             </div>
           </div>
          </div>
-         <div class="col-xl-4">
+         <div class="col-xl-4 headline">
            <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488799.489859104!2d95.90068593798944!3d16.83895155113448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2ssg!4v1648711819625!5m2!1sen!2ssg" class="shadow rounded-5 google-map"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            </div>
          </div>
-         <div class="col-xl-4">
+         <div class="col-xl-4 headline">
            <div>
              <p class="fw-bold mb-1">Send A Request</p>
              <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
@@ -604,7 +634,7 @@
      <!-- footer -->
      <div class="container my-5">
        <div class="row justify-content-center align-items-center">
-         <div class="col-xl-6 mb-5">
+         <div class="col-xl-6 mb-5 headline">
            <div class="text-center">
              <h2>App is Available For Free On Google Play & App Store</h2>
              <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate rem laborum esse ipsum.</p>
@@ -623,12 +653,12 @@
           </div>
         </div>
         <div class="row pt-5">
-          <div class="col-6">
+          <div class="col-6 headline">
             <div class="">
               <span class="text-muted">&copy; DaDDy</span>
             </div>
           </div>
-          <div class="col-6 text-center">
+          <div class="col-6 text-center headline">
             <div class=" d-flex justify-content-center align-items-center">
               <span class="me-2">
                 <i class="fa-solid fa-sun"></i>
@@ -653,6 +683,10 @@
      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
      <script src="../node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
      <script src="./src/slick-1.8.1/slick/slick.min.js"></script>
+     <script src="../node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
      <script src="./src/script.js"></script>
+     <script>
+     
+     </script>
 </body>
 </html>

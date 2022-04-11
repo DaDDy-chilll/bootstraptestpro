@@ -1,3 +1,7 @@
+window.addEventListener('load',()=>{
+  document.querySelector('.loading').style.display='none';
+});
+// ___________________________
 $('.profolio').slick({
     dots: true,
     infinite: true,
@@ -68,13 +72,26 @@ var waypoint = new Waypoint({
 })
 
 // _________________________________________
+let card = document.querySelectorAll('.card')
 const changeThemeToDark = ()=>{
   document.documentElement.setAttribute('data-theme','dark')
   localStorage.setItem('data-theme','dark');
+
+    for(let i = 0; i < card.length; i++){
+    card[i].classList.remove('shadow-xl');
+    card[i].classList.remove('border-0');
+    card[i].classList.add('pdf-border-zinc-800')
+  }
 }
 const changeThemeToLight = ()=>{
   document.documentElement.setAttribute('data-theme','light')
   localStorage.setItem('data-theme','light');
+
+  for(let i = 0; i < card.length; i++){
+  card[i].classList.add('shadow-xl');
+  card[i].classList.add('border-0');
+  card[i].classList.remove('pdf-border-zinc-800')
+}
 }
 
 
@@ -95,3 +112,21 @@ if(theme === 'dark'){
 }else{
   changeThemeToLight();
 }
+// --------------------------------------
+let menuIcon = document.querySelector('.menu-icon')
+menuIcon.addEventListener('click',()=>{
+    menuIcon.classList.toggle('show')
+})
+// __________________________
+ScrollReveal(
+  {
+     origin: 'bottom',
+     duration: 900 ,
+     reset: true,
+     
+    }
+    ).reveal('.headline',{
+      interval: 200,
+      distance: '200px',
+      viewFactor: 0
+});
