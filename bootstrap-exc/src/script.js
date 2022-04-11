@@ -122,7 +122,7 @@ ScrollReveal(
   {
      origin: 'bottom',
      duration: 900 ,
-     reset: true,
+    //  reset: true,
      
     }
     ).reveal('.headline',{
